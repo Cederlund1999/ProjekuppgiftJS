@@ -4,7 +4,10 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+@keyframes toVisible {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
 /* HEADER */
 #character-header{
     width: 100%;
@@ -61,6 +64,8 @@ main{
     box-shadow: 5px 5px 100px 5px#dac50a;
     color: #dac50a;
     line-height: 1.5em;
+    animation-name: toVisible;
+    animation-duration: 1s;
 }
 
 .grid-full{
