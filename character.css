@@ -8,6 +8,13 @@
     from {opacity: 0;}
     to {opacity: 1;}
   }
+
+  @keyframes colorTransform {
+    0% {box-shadow: 5px 5px 100px 5px#fff;}
+    50% {box-shadow: 5px 5px 100px 5px rgb(212, 16, 16);}
+    100% {box-shadow: 5px 5px 100px 5px#fff;}
+  }
+
 /* HEADER */
 #character-header{
     width: 100%;
@@ -54,11 +61,9 @@ main{
     grid-gap: 2em;
     background: #333;
     border-radius: 0.5em;
-    box-shadow: 5px 5px 100px 5px#fff;
     color: rgb(10, 134, 250);
     line-height: 1.5em;
-    animation-name: toVisible;
-    animation-duration: 1s;
+    animation: toVisible 1s, colorTransform 20s infinite;
 }
 
 .grid-full{
