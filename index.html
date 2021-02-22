@@ -11,11 +11,13 @@
     <header >
         <a href="character.html" style="margin-right: 90%; color: whitesmoke;"> Character</a>
         <h3>Star Wars Characters</h3>
-        <input 
-        type="text"
-        class="searchBox"
-        placeholder="Search for a character"
-        >
+        
+        <form class="charForm" action="character.html">
+            <label  for="characterName"></label>
+            <input class="inputClass" type="text" id="characterName" name="cname" value="John">
+            <input class ="submitButton" type="submit" value="Submit">
+
+        </form>
         
     </header>
     <h2 >List of Characters</h2>
