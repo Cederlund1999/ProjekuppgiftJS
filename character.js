@@ -1,4 +1,6 @@
-const searchName = "luke";
+const url = new URL(window.location.href);
+const searchName = url.searchParams.get('cname');
+
 const spanElements = document.getElementsByTagName('span');
 let characterName = document.querySelector('#character-name');
 
