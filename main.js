@@ -1,6 +1,6 @@
 "use strict";   
    onload = async function createCharacterList(){
-    const response = await fetch(`http://swapi.dev/api/people/?page=1`);
+    const response = await fetch(`https://swapi.dev/api/people/`);
     const responseData = await response.json()
     console.log(responseData);  
     
@@ -15,9 +15,7 @@
     x++;
     
 }
-
 }
-
 document.getElementById('showMoreClick').onclick = async function(){
     const response = await fetch(`http://swapi.dev/api/people/?page=2`)
     const data = await response.json();
