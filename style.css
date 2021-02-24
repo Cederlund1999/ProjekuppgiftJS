@@ -55,13 +55,19 @@ h2{
     display: flex;
     justify-content: center;
     margin:auto;
-    margin-top: 5%;
+    margin-top: 3%;
+    margin-bottom: 3%;
    width: 55%;
    height: 35px;
    border-radius: 7px 7px 7px 7px;
    background-color: lightblue;
    font-size: medium;
    font-weight: bold;
+   opacity: 80%;
+   transition: 0.3s;
+}
+.submitButton:hover{
+    opacity:100%;
 }
 footer{
     border-top: solid;
@@ -83,16 +89,12 @@ ul{
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    max-width: 20%;
+    max-width: 40%;
     margin-left: auto;
     margin-right: auto;
     line-height: 50px;
     font-size: 125%;
-    justify-content: space-evenly;
-    
-    
-        
-    
+    justify-content:space-evenly;
     
 }
 li{
@@ -101,4 +103,15 @@ li{
     font-weight:700;
     
     
+}
+.buttonDiv{
+    display: flex;
+    justify-content: center;
+    
+}
+.showMoreButton{
+    border-radius: 7px 7px 7px 7px;
+    width: 5%;
+    height: 25px;
+    background-color: lightblue;
 }
