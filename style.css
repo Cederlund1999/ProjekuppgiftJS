@@ -14,7 +14,8 @@ header {
     
     border-bottom: solid;
     border-width: 2px;
-   
+    
+    
     
 }
 body{
@@ -28,12 +29,15 @@ body{
 h3{
     font-size: 400%;
     font-weight: 900;
+    text-shadow: 4px 4px 4px red;
 }
 h2{
     text-align: center;
     margin-top:2%;
     font-size: 300%;
+    text-shadow: 4px 4px 4px red;
 }
+
 
 
 
@@ -124,7 +128,9 @@ li{
     background-color: lightblue;
     opacity: 70%;
     transition: 0.1s;
+    
 }
 .randomizeButton:hover{
     opacity: 100%;
 }
+
