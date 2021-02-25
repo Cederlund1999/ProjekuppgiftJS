@@ -96,11 +96,13 @@ ul{
     font-size: 125%;
     justify-content:space-evenly;
     
+    
 }
 li{
     padding-right: 5%;
     padding-top: 2%;
     font-weight:700;
+    
     
     
 }
@@ -114,4 +116,15 @@ li{
     width: 5%;
     height: 25px;
     background-color: lightblue;
+}
+.randomizeButton{
+    border-radius: 7px 7px 7px 7px;
+    width: 5%;
+    height: 25px;
+    background-color: lightblue;
+    opacity: 70%;
+    transition: 0.1s;
+}
+.randomizeButton:hover{
+    opacity: 100%;
 }
