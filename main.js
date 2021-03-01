@@ -36,10 +36,14 @@ document.getElementById('showMoreClick').onclick = async function(){
     }
 }
 document.getElementById('randomizeButton').onclick = async function randomSearch(){
-    let x = Math.floor(Math.random()*86);
-    const response = await fetch(`https://swapi.dev/api/people/${x}`)
+    let x = Math.floor( (Math.random()*7) +1);
+    let i = Math.floor(Math.random()*10);
+    const response = await fetch(`https://swapi.dev/api/people/?page=${x}`)
+    console.log(response);
     const data = await response.json();
     console.log(document.getElementById('characterName').value);
-    document.getElementById('characterName').value = data.name;
+    console.log(data);
+    document.getElementById('characterName').value = data.results[i].name;
     document.getElementById('searchButton').click();
 }
+
