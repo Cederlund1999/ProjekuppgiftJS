@@ -21,7 +21,7 @@
     height: 350px;
     border-bottom: 2px solid #fff;
     background-color: #000;
-    color: #555;
+    color: #fff;
 }
 
 .link-start{
@@ -39,6 +39,7 @@
 
 #header-info h1{
     font-size: 5em;
+    text-shadow: 4px 4px 4px red;
 }
 
 /* MAIN */
@@ -46,13 +47,14 @@
 main{
     padding: 5em;
     background: #222 url('img/stars.jpg');
+    animation: toVisible 1s, colorTransform 20s infinite;
 }
 
 .white{
     color: #fff;
 }
 
-#character-info{
+#character-info, #homeworld-info{
     width: 60%;
     margin: 1em auto;
     padding: 3em;
@@ -63,7 +65,6 @@ main{
     border-radius: 0.5em;
     color: rgb(10, 134, 250);
     line-height: 1.5em;
-    animation: toVisible 1s, colorTransform 20s infinite;
 }
 
 .grid-full{
@@ -71,11 +72,11 @@ main{
    text-align: center;
 }
 
-#character-info h2{
+h2{
     font-size: 3em;
 }
 
-#character-info p{
+p{
     text-align: center;
     padding: 2em;
     font-size: 1.1em;
