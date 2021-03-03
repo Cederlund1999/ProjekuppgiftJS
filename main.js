@@ -18,7 +18,6 @@ onload = async function createCharacterList() {
 document.getElementById("showMoreClick").onclick = async function () {
   const response = await fetch(`https://swapi.dev/api/people/?page=2`);
   const data = await response.json();
-  console.log(data);
   let i = 0;
   let x = 0;
   while (i < 10) {
@@ -41,8 +40,6 @@ document.getElementById(
   const response = await fetch(`https://swapi.dev/api/people/?page=${x}`);
   console.log(response);
   const data = await response.json();
-  console.log(document.getElementById("characterName").value);
-  console.log(data);
   document.getElementById("characterName").value = data.results[i].name;
   document.getElementById("searchButton").click();
 };
