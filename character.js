@@ -26,13 +26,11 @@ getCharacterInfo(searchName);
 function getHomeworldInfo(homeworldUrl){
     let url = new URL(homeworldUrl);
     url.protocol = 'https';
-    console.log(url);
     fetch(url).then((res) => res.json()).then((data) => {
         if(data.count === 0){
             console.log('no planet');
         } 
         else{
-            console.log(data);
             createHomeworldArticle(data);
         }
     }).catch((err) => {
