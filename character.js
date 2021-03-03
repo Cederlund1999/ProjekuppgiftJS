@@ -24,12 +24,13 @@ function getCharacterInfo(name){
 getCharacterInfo(searchName);
 
 function getHomeworldInfo(homeworldUrl){
-    fetch(homeworldUrl).then((res) => res.json()).then((data) => {
+    let url = new URL(homeworldUrl);
+    url.protocol = 'https';
+    fetch(url).then((res) => res.json()).then((data) => {
         if(data.count === 0){
             console.log('no planet');
         } 
         else{
-            console.log(data);
             createHomeworldArticle(data);
         }
     }).catch((err) => {
